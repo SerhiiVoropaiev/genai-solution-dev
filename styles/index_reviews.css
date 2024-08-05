@@ -1,0 +1,171 @@
+
+.reviews {
+    padding: 80px 0;
+}
+
+.reviews__cover {
+    max-width: 100%;
+    height: auto;
+}
+
+.humanity_cover-logo {
+    max-width: 140px;
+}
+
+.penpot_cover-logo {
+    max-width: 140px;
+}
+
+.reviews__wrap__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.reviews__wrap__review {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.reviews__position-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.reviews__content.content-review {
+    font-style: italic;
+}
+
+.reviews__name {
+    color: var(--dark-deep-color);
+    font-weight: 600;
+}
+
+.reviews__name-position {
+    color: var(--dark-deep-color);
+    font-weight: 300;
+}
+
+.reviews__content {
+    margin-bottom: 24px;
+    position: relative;
+    font-style: italic;
+}
+
+.reviews__content:before {
+    content: url('../img/quote.svg');
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 20px;
+    height: auto;
+    z-index: -1;
+}
+
+.visa_cover {
+    max-width: 48px;
+    margin-bottom: 8px;
+}
+
+.slider-pagination__wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding-top: 24px;
+}
+
+.slider_item {
+    width: 12px;
+    height: 12px;
+    background: var(--blue-pure-light-color);
+    border-radius: 90px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider_item:hover {
+    background: var(--blue-accent-color);
+}
+
+.pagination-item__selected {
+    background: var(--blue-accent-color);
+    width: 64px;
+}
+
+.peakdefence_cover-logo {
+    max-width: 160px;
+}
+
+@media (min-width: 768px) {
+    .reviews__wrap__content {
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .reviews__cover {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 968px) {
+    .reviews__wrap__content {
+        gap: 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .reviews__cover {
+        max-width: 448px;
+    }
+
+    .reviews__wrap__review {
+        max-width: 50%;
+    }
+}
+
+/* Скрыть все слайды по умолчанию */
+.reviews__wrap__content {
+    display: none;
+}
+
+/* Показывать слайд, если соответствующий радио-кнопка выбрана */
+#slide1:checked ~ .reviews__wrap #content1,
+#slide2:checked ~ .reviews__wrap #content2,
+#slide3:checked ~ .reviews__wrap #content3,
+#slide4:checked ~ .reviews__wrap #content4 {
+    display: flex;
+}
+
+/* Стили для элементов управления */
+.slider-pagination__wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slider_item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider_item:hover {
+    background-color: #888; /* Серый цвет при наведении */
+}
+
+/* Стиль для активного элемента управления */
+#slide1:checked ~ .slider-pagination__wrap label[for="slide1"],
+#slide2:checked ~ .slider-pagination__wrap label[for="slide2"],
+#slide3:checked ~ .slider-pagination__wrap label[for="slide3"],
+#slide4:checked ~ .slider-pagination__wrap label[for="slide4"] {
+    background-color: var(--blue-accent-color); /* Зелёный цвет для активного элемента */
+}

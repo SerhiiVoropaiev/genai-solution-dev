@@ -1,0 +1,94 @@
+.header__intro {
+    display: block;
+    flex-basis: 100%;
+    padding: 150px 0 110px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.header__background {
+    background-image: url(../img/main-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50.7% 0;
+}
+
+.header__intro-content {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-intro {
+    color: var(--light-80-color);
+    padding: 35px 0 25px;
+}
+
+.header__intro-sub-text {
+    color: var(--light-80-color);
+    font-size: 17px;
+    line-height: 25.5px;
+    text-align: center;
+}
+
+.aws_neuronslab_collaboration {
+    max-width: 294px;
+    margin-bottom: 16px;
+}
+
+
+@supports (-webkit-touch-callout : none) {
+    .header__background {
+        background-attachment: scroll;
+    }
+}
+
+@supports not (-webkit-touch-callout : none) {
+    .header__background {
+        background-attachment: fixed;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .header-h1 {
+        max-width: 80%;
+    }
+
+    .header-h3 {
+        max-width: 80%;
+    }
+
+    .header__intro {
+        padding: 150px 0 140px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .header-h1 {
+        max-width: 80%;
+    }
+
+    .header-h3 {
+        max-width: 70%;
+    }
+
+    .header__intro {
+        padding: 170px 0 150px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-h1 {
+        max-width: 80%;
+    }
+
+    .header-h3 {
+        max-width: 70%;
+    }
+
+    .header__intro {
+        padding: 280px 0 160px;
+    }
+}
+

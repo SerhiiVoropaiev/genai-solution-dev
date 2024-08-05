@@ -1,0 +1,100 @@
+.fifty-companies {
+    padding: 40px 0 120px 0;
+}
+
+.fifty-companies__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.fifty-companies__header-h2 {
+    margin-bottom: 80px;
+    color: var(--dark-deep-color);
+}
+
+.fifty-companies__logo-item {
+    display: block;
+    max-height: 40px;
+    width: auto;
+    opacity: 50%;
+}
+
+.fifty-companies__logo-set {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+    overflow: hidden;
+}
+
+.fifty-companies__logo-set {
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fifty-companies__logo-inner {
+    display: flex;
+    animation: scroll-logo 60s linear infinite;
+    gap: 80px;
+}
+
+@keyframes scroll-logo {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.fifty-companies__logo-item {
+    display: block;
+    max-height: 40px;
+    width: auto;
+    opacity: 0.5;
+    flex-shrink: 0; /* Обеспечивает, что логотипы не сжимаются */
+}
+
+@media (min-width: 768px) {
+
+    .fifty-companies__logo-set {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .fifty-companies__logo-inner {
+        display: flex;
+        animation: scroll-logo 60s linear infinite;
+        gap: 160px;
+    }
+
+    @keyframes scroll-logo {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .fifty-companies__logo-item {
+        display: block;
+        max-height: 40px;
+        width: auto;
+        opacity: 0.5;
+        flex-shrink: 0; /* Обеспечивает, что логотипы не сжимаются */
+    }
+}

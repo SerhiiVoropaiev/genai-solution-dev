@@ -1,0 +1,110 @@
+/* Основной стиль формы */
+#contact-form {
+    width: 100%;
+    padding: 12px 0 80px 0;
+}
+
+/* Стилизация всех текстовых полей ввода внутри формы */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: none; /* Убираем все границы */
+    border-bottom: 1px solid var(--light-70-color); /* Добавляем только нижнюю границу */
+    box-sizing: border-box;
+    outline: none; /* Опционально, убираем выделение при фокусе */
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+}
+
+#contact-form textarea {
+    border: 1px solid var(--light-70-color);
+    border-radius: 10px;
+}
+
+.message-label {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    color: var(--light-70-color);
+}
+
+/* Стиль для текстовой области */
+#contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Стилизация кнопки отправки */
+#contact-form button {
+    width: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Плейсхолдеры с более светлым цветом */
+#contact-form ::placeholder {
+    color: var(--light-70-color);
+}
+
+/* Фокус на поля ввода с изменением границы */
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: var(--blue-accent-color);
+}
+
+/*______________________________________________*/
+.form-sec__wrap__content {
+    display: flex;
+    flex-direction: column;
+    /*padding-bottom: 120px;*/
+    gap: 40px;
+}
+
+.form-sec__wrap-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.form-sec__cover {
+    order: -1;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 968px) {
+    .form-sec__wrap__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 80px 0 120px 0;
+        gap: 64px;
+    }
+
+    .form-sec__cover {
+        display: block;
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1280px) {
+    .form-sec__wrap__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 80px 0 120px 0;
+        gap: 120px;
+    }
+}
