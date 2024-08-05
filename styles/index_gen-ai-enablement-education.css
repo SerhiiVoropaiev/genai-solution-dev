@@ -1,0 +1,71 @@
+.gen-ai-enablement-education__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gen-ai-enablement-education {
+    background: var(--blue-deep-color);
+    padding: 120px 0;
+}
+
+
+.gen-ai-enablement-education__header-h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    color: var(--light-100-color);
+}
+
+.gen-ai-enablement-education__content {
+    text-align: center;
+    max-width: 960px;
+    color: var(--light-70-color);
+    margin-bottom: 80px;
+}
+
+.content_small{
+    font-size: 12px;
+    color: var(--light-70-color);
+}
+
+.content_regular{
+    color: var(--light-100-color);
+}
+
+.step{
+    width: 80px;
+}
+
+.gen-ai-enablement-education_mobile_element{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+
+}
+
+.gen-ai-enablement-education_mobile_elements_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: flex-start;
+}
+
+.stepper_wrap{
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.gen-ai-enablement-education_scheme{
+    display: none;
+    padding-top: 72px;
+}
+
+@media (min-width: 1024px) {
+    .gen-ai-enablement-education_mobile_elements_wrap{
+        display: none;
+    }
+    .gen-ai-enablement-education_scheme{
+        display: block;
+    }
+}
