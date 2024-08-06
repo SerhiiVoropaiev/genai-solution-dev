@@ -7,6 +7,9 @@
     margin-bottom: 12px;
 }
 
+.m_item-link{
+    font-size: 15px;
+}
 
 .header__nav-list {
     text-align: center;
@@ -62,7 +65,7 @@
     font-weight: 400;
     font-size: 17px;
     letter-spacing: 0;
-    gap: 12px;
+    gap: 8px;
     padding: 12px 0;
 }
 
